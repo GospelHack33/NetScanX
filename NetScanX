@@ -64,9 +64,7 @@ vulns = data.get('vulns', [])
 print(Fore.YELLOW+"IP ADDRESS - {}".format(ip_addr),Fore.WHITE)
 
 print(Fore.BLUE+"\n-[OPEN PORTS]-\n"+Fore.WHITE)
-for port in ports:
-    service_name = socket.getservbyport(port)
-    print(port, " - ", service_name)
+print(ports)
 print()
 
 if len(vulns) == 0:
